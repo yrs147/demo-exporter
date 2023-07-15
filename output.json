@@ -1,404 +1,815 @@
-{
-  "vulnerabilities": [
+[
     {
-      "name": "CVE-2023-0001",
-      "components": "github.com/opencontainers/runc",
-      "version": "v1.1.0",
-      "severity": "Critical",
-      "fixable": "Yes",
-      "fix_in_version": "v1.1.5",
-      "RCE": "No",
-      "description": "runc AppArmor bypass with symlinked /proc"
+        "cluster": "minikube",
+        "namespace": "default",
+        "workload": "pod-backend",
+        "container": "backend",
+        "registry": "docker-hub",
+        "imgtag": "yrs/tesapp:latest",
+        "vulnerabilities": [
+          {
+            "name": "GHSA-1234-abcd-5678",
+            "components": "nodejs",
+            "severity": "Medium",
+            "fixable": "Yes",
+            "fix_in_version": "14.0.1",
+            "RCE": "No",
+            "description": "A medium severity vulnerability in Node.js allows remote code execution."
+          },
+          {
+            "name": "CVE-2023-5678",
+            "components": "nginx",
+            "severity": "Critical",
+            "fixable": "Yes",
+            "fix_in_version": "1.18.1",
+            "RCE": "No",
+            "description": "A critical vulnerability in Nginx allows remote attackers to execute arbitrary code."
+          },
+          {
+            "name": "GHSA-efgh-9012-ijkl",
+            "components": "apache2",
+            "severity": "Low",
+            "fixable": "No",
+            "fix_in_version": "-",
+            "RCE": "No",
+            "description": "A low severity vulnerability in Apache2 exposes sensitive data to unauthorized users."
+          },
+          {
+            "name": "GHSA-abcd-5678-ijkl",
+            "components": "aws-cli",
+            "severity": "Critical",
+            "fixable": "Yes",
+            "fix_in_version": "2.0.1",
+            "RCE": "No",
+            "description": "A critical severity vulnerability in AWS CLI allows information disclosure."
+          },
+          {
+            "name": "CVE-2023-pqrs-7890",
+            "components": "docker",
+            "severity": "Negligible",
+            "fixable": "No",
+            "fix_in_version": "-",
+            "RCE": "No",
+            "description": "A negligible severity vulnerability in Docker has minimal impact."
+          },
+          {
+            "name": "CVE-2023-9012",
+            "components": "apache-tomcat",
+            "severity": "High",
+            "fixable": "Yes",
+            "fix_in_version": "9.0.1",
+            "RCE": "No",
+            "description": "A high severity vulnerability in Apache Tomcat allows remote code execution."
+          },
+          {
+            "name": "CVE-2023-7890",
+            "components": "mysql-server",
+            "severity": "Low",
+            "fixable": "Yes",
+            "fix_in_version": "5.6.1",
+            "RCE": "No",
+            "description": "A low severity vulnerability in MySQL Server allows SQL injection attacks."
+          },
+          {
+            "name": "CVE-2023-mnop-3456",
+            "components": "php",
+            "severity": "High",
+            "fixable": "Yes",
+            "fix_in_version": "7.3.1",
+            "RCE": "No",
+            "description": "A high severity vulnerability in PHP allows remote attackers to execute arbitrary code."
+          },
+          {
+            "name": "CVE-2023-9012-ijkl",
+            "components": "mongodb",
+            "severity": "Medium",
+            "fixable": "Yes",
+            "fix_in_version": "4.2.1",
+            "RCE": "No",
+            "description": "A medium severity vulnerability in MongoDB exposes sensitive data to unauthorized users."
+          },
+          {
+            "name": "GHSA-mnop-5678-abcd",
+            "components": "php",
+            "severity": "Medium",
+            "fixable": "Yes",
+            "fix_in_version": "7.3.1",
+            "RCE": "No",
+            "description": "A medium severity vulnerability in PHP allows remote attackers to execute arbitrary code."
+          },
+          {
+            "name": "GHSA-ijkl-9012-mnop",
+            "components": "kubernetes",
+            "severity": "High",
+            "fixable": "Yes",
+            "fix_in_version": "1.22.1",
+            "RCE": "No",
+            "description": "A high severity vulnerability in Kubernetes allows unauthorized access to cluster resources."
+          },
+          {
+            "name": "GHSA-pqrs-7890-abcd",
+            "components": "postgresql",
+            "severity": "Low",
+            "fixable": "Yes",
+            "fix_in_version": "12.1",
+            "RCE": "No",
+            "description": "A low severity vulnerability in PostgreSQL allows unauthorized access to database resources."
+          },
+          {
+            "name": "GHSA-5678-abcd-1234",
+            "components": "kubernetes",
+            "severity": "Critical",
+            "fixable": "Yes",
+            "fix_in_version": "1.22.1",
+            "RCE": "No",
+            "description": "A critical severity vulnerability in Kubernetes allows unauthorized access to cluster resources."
+          },
+          {
+            "name": "CVE-2023-5678-mnop",
+            "components": "nginx",
+            "severity": "Medium",
+            "fixable": "Yes",
+            "fix_in_version": "1.18.1",
+            "RCE": "No",
+            "description": "A medium severity vulnerability in Nginx exposes sensitive data to unauthorized users."
+          },
+          {
+            "name": "GHSA-7890-abcd-ijkl",
+            "components": "nodejs",
+            "severity": "Low",
+            "fixable": "No",
+            "fix_in_version": "-",
+            "RCE": "No",
+            "description": "A low severity vulnerability in Node.js exposes sensitive data to unauthorized users."
+          },
+          {
+            "name": "GHSA-mnop-5678-pqrs",
+            "components": "postgresql",
+            "severity": "Critical",
+            "fixable": "Yes",
+            "fix_in_version": "12.1",
+            "RCE": "No",
+            "description": "A critical severity vulnerability in PostgreSQL allows unauthorized access to database resources."
+          },
+          {
+            "name": "CVE-2023-9012-mnop",
+            "components": "apache-tomcat",
+            "severity": "Low",
+            "fixable": "Yes",
+            "fix_in_version": "9.0.1",
+            "RCE": "No",
+            "description": "A low severity vulnerability in Apache Tomcat exposes sensitive data to unauthorized users."
+          },
+          {
+            "name": "CVE-2023-9012",
+            "components": "mongodb",
+            "severity": "High",
+            "fixable": "Yes",
+            "fix_in_version": "4.2.1",
+            "RCE": "No",
+            "description": "A high severity vulnerability in MongoDB allows remote code execution."
+          },
+          {
+            "name": "GHSA-ijkl-9012-qrst",
+            "components": "apache2",
+            "severity": "Negligible",
+            "fixable": "No",
+            "fix_in_version": "-",
+            "RCE": "No",
+            "description": "A negligible severity vulnerability in Apache2 has minimal impact."
+          },
+          {
+            "name": "CVE-2023-7890",
+            "components": "mysql-server",
+            "severity": "Medium",
+            "fixable": "Yes",
+            "fix_in_version": "5.6.1",
+            "RCE": "No",
+            "description": "A medium severity vulnerability in MySQL Server allows unauthorized access to database resources."
+          },
+          {
+            "name": "GHSA-abcd-5678-ijkl",
+            "components": "aws-cli",
+            "severity": "High",
+            "fixable": "Yes",
+            "fix_in_version": "2.0.1",
+            "RCE": "No",
+            "description": "A high severity vulnerability in AWS CLI allows remote code execution."
+          },
+          {
+            "name": "CVE-2023-mnop-3456",
+            "components": "php",
+            "severity": "Medium",
+            "fixable": "Yes",
+            "fix_in_version": "7.3.1",
+            "RCE": "No",
+            "description": "A medium severity vulnerability in PHP allows remote attackers to execute arbitrary code."
+          },
+          {
+            "name": "GHSA-1234-abcd-5678",
+            "components": "nodejs",
+            "severity": "Low",
+            "fixable": "No",
+            "fix_in_version": "-",
+            "RCE": "No",
+            "description": "A low severity vulnerability in Node.js exposes sensitive data to unauthorized users."
+          },
+          {
+            "name": "CVE-2023-pqrs-7890",
+            "components": "docker",
+            "severity": "Medium",
+            "fixable": "Yes",
+            "fix_in_version": "19.0.1",
+            "RCE": "No",
+            "description": "A medium severity vulnerability in Docker allows unauthorized access to container data."
+          },
+          {
+            "name": "CVE-2023-5678",
+            "components": "nginx",
+            "severity": "High",
+            "fixable": "Yes",
+            "fix_in_version": "1.18.1",
+            "RCE": "No",
+            "description": "A high severity vulnerability in Nginx allows remote code execution."
+          },
+          {
+            "name": "GHSA-ijkl-9012-mnop",
+            "components": "kubernetes",
+            "severity": "Medium",
+            "fixable": "Yes",
+            "fix_in_version": "1.22.1",
+            "RCE": "No",
+            "description": "A medium severity vulnerability in Kubernetes allows unauthorized access to cluster resources."
+          },
+          {
+            "name": "GHSA-7890-abcd-ijkl",
+            "components": "nodejs",
+            "severity": "High",
+            "fixable": "Yes",
+            "fix_in_version": "14.0.1",
+            "RCE": "No",
+            "description": "A high severity vulnerability in Node.js allows remote code execution."
+          },
+          {
+            "name": "CVE-2023-9012-ijkl",
+            "components": "mongodb",
+            "severity": "Medium",
+            "fixable": "Yes",
+            "fix_in_version": "4.2.1",
+            "RCE": "No",
+            "description": "A medium severity vulnerability in MongoDB exposes sensitive data to unauthorized users."
+          },
+          {
+            "name": "GHSA-abcd-5678-ijkl",
+            "components": "aws-cli",
+            "severity": "Low",
+            "fixable": "No",
+            "fix_in_version": "-",
+            "RCE": "No",
+            "description": "A low severity vulnerability in AWS CLI exposes sensitive data to unauthorized users."
+          },
+          {
+            "name": "CVE-2023-9012",
+            "components": "apache-tomcat",
+            "severity": "High",
+            "fixable": "Yes",
+            "fix_in_version": "9.0.1",
+            "RCE": "No",
+            "description": "A high severity vulnerability in Apache Tomcat allows remote code execution."
+          },
+          {
+            "name": "CVE-2023-mnop-3456",
+            "components": "php",
+            "severity": "Low",
+            "fixable": "Yes",
+            "fix_in_version": "7.3.1",
+            "RCE": "No",
+            "description": "A low severity vulnerability in PHP exposes sensitive data to unauthorized users."
+          },
+          {
+            "name": "GHSA-pqrs-7890-abcd",
+            "components": "postgresql",
+            "severity": "Medium",
+            "fixable": "Yes",
+            "fix_in_version": "12.1",
+            "RCE": "No",
+            "description": "A medium severity vulnerability in PostgreSQL allows unauthorized access to database resources."
+          },
+          {
+            "name": "GHSA-ijkl-9012-mnop",
+            "components": "kubernetes",
+            "severity": "High",
+            "fixable": "Yes",
+            "fix_in_version": "1.22.1",
+            "RCE": "No",
+            "description": "A high severity vulnerability in Kubernetes allows unauthorized access to cluster resources."
+          },
+          {
+            "name": "CVE-2023-5678",
+            "components": "nginx",
+            "severity": "Critical",
+            "fixable": "Yes",
+            "fix_in_version": "1.18.1",
+            "RCE": "No",
+            "description": "A critical vulnerability in Nginx allows remote attackers to execute arbitrary code."
+          },
+          {
+            "name": "GHSA-mnop-5678-abcd",
+            "components": "php",
+            "severity": "Medium",
+            "fixable": "Yes",
+            "fix_in_version": "7.3.1",
+            "RCE": "No",
+            "description": "A medium severity vulnerability in PHP allows remote attackers to execute arbitrary code."
+          },
+          {
+            "name": "GHSA-9012-abcd-ijkl",
+            "components": "nodejs",
+            "severity": "Negligible",
+            "fixable": "No",
+            "fix_in_version": "-",
+            "RCE": "No",
+            "description": "A negligible severity vulnerability in Node.js has minimal impact."
+          },
+          {
+            "name": "CVE-2023-pqrs-7890",
+            "components": "docker",
+            "severity": "Medium",
+            "fixable": "Yes",
+            "fix_in_version": "19.0.1",
+            "RCE": "No",
+            "description": "A medium severity vulnerability in Docker allows unauthorized access to container data."
+          },
+          {
+            "name": "GHSA-abcd-ijkl-1234",
+            "components": "aws-cli",
+            "severity": "High",
+            "fixable": "Yes",
+            "fix_in_version": "2.0.1",
+            "RCE": "No",
+            "description": "A high severity vulnerability in AWS CLI allows remote code execution."
+          },
+          {
+            "name": "CVE-2023-7890-mnop",
+            "components": "mongodb",
+            "severity": "Medium",
+            "fixable": "Yes",
+            "fix_in_version": "4.2.1",
+            "RCE": "No",
+            "description": "A medium severity vulnerability in MongoDB exposes sensitive data to unauthorized users."
+          },
+          {
+            "name": "GHSA-ijkl-mnop-9012",
+            "components": "kubernetes",
+            "severity": "Critical",
+            "fixable": "Yes",
+            "fix_in_version": "1.22.1",
+            "RCE": "No",
+            "description": "A critical severity vulnerability in Kubernetes allows unauthorized access to cluster resources."
+          },
+          {
+            "name": "GHSA-7890-abcd-ijkl",
+            "components": "nodejs",
+            "severity": "Medium",
+            "fixable": "Yes",
+            "fix_in_version": "14.0.1",
+            "RCE": "No",
+            "description": "A medium severity vulnerability in Node.js allows remote code execution."
+          },
+          {
+            "name": "CVE-2023-3456",
+            "components": "nginx",
+            "severity": "Low",
+            "fixable": "Yes",
+            "fix_in_version": "1.18.1",
+            "RCE": "No",
+            "description": "A low severity vulnerability in Nginx exposes sensitive data to unauthorized users."
+          },
+          {
+            "name": "CVE-2023-pqrs-7890",
+            "components": "docker",
+            "severity": "High",
+            "fixable": "Yes",
+            "fix_in_version": "19.0.1",
+            "RCE": "No",
+            "description": "A high severity vulnerability in Docker allows container escape."
+          }
+        ]
     },
     {
-      "name": "CVE-2023-0002",
-      "components": "libsystemd0",
-      "version": "2.5.0",
-      "severity": "High",
-      "fixable": "Yes",
-      "fix_in_version": "2.5.1",
-      "RCE": "No",
-      "description": "Privilege escalation vulnerability in libsystemd0"
-    },
-    {
-      "name": "CVE-2023-0003",
-      "components": "libcurl4",
-      "version": "7.4.0",
-      "severity": "Medium",
-      "fixable": "Yes",
-      "fix_in_version": "7.4.1",
-      "RCE": "No",
-      "description": "Security vulnerability in libcurl4 allows information disclosure"
-    },
-    {
-      "name": "CVE-2023-0004",
-      "components": "gpg-wks-server",
-      "version": "2.1.0",
-      "severity": "Low",
-      "fixable": "No",
-      "fix_in_version": "-",
-      "RCE": "No",
-      "description": "Weak encryption algorithm used in gpg-wks-server"
-    },
-    {
-      "name": "CVE-2023-0005",
-      "components": "libc6",
-      "version": "2.3.0",
-      "severity": "Low",
-      "fixable": "Yes",
-      "fix_in_version": "2.3.1",
-      "RCE": "No",
-      "description": "Buffer overflow vulnerability in libc6"
-    },
-    {
-      "name": "CVE-2023-0006",
-      "components": "libldap-2.5-0",
-      "version": "2.5.0",
-      "severity": "Medium",
-      "fixable": "Yes",
-      "fix_in_version": "2.5.1",
-      "RCE": "No",
-      "description": "LDAP injection vulnerability in libldap-2.5-0"
-    },
-    {
-      "name": "CVE-2023-0007",
-      "components": "gnupg-l10n",
-      "version": "1.0.0",
-      "severity": "Low",
-      "fixable": "Yes",
-      "fix_in_version": "1.0.1",
-      "RCE": "No",
-      "description": "Localization file disclosure vulnerability in gnupg-l10n"
-    },
-    {
-      "name": "CVE-2023-0008",
-      "components": "dirmngr",
-      "version": "2.2.0",
-      "severity": "High",
-      "fixable": "Yes",
-      "fix_in_version": "2.2.1",
-      "RCE": "No",
-      "description": "Denial-of-service vulnerability in dirmngr"
-    },
-    {
-      "name": "CVE-2023-0009",
-      "components": "coreutils",
-      "version": "8.0.0",
-      "severity": "Critical",
-      "fixable": "Yes",
-      "fix_in_version": "8.0.1",
-      "RCE": "No",
-      "description": "Arbitrary code execution vulnerability in coreutils"
-    },
-    {
-      "name": "CVE-2023-0010",
-      "components": "libssl-dev",
-      "version": "1.2.0",
-      "severity": "Medium",
-      "fixable": "Yes",
-      "fix_in_version": "1.2.1",
-      "RCE": "No",
-      "description": "Memory corruption vulnerability in libssl-dev"
-    },
-    {
-      "name": "CVE-2023-0011",
-      "components": "openssl",
-      "version": "1.1.0",
-      "severity": "High",
-      "fixable": "Yes",
-      "fix_in_version": "1.1.1",
-      "RCE": "No",
-      "description": "Padding oracle vulnerability in OpenSSL"
-    },
-    {
-      "name": "CVE-2023-0012",
-      "components": "nginx",
-      "version": "1.16.0",
-      "severity": "Medium",
-      "fixable": "Yes",
-      "fix_in_version": "1.16.1",
-      "RCE": "No",
-      "description": "Denial-of-service vulnerability in Nginx"
-    },
-    {
-      "name": "CVE-2023-0013",
-      "components": "apache2",
-      "version": "2.4.0",
-      "severity": "Low",
-      "fixable": "No",
-      "fix_in_version": "-",
-      "RCE": "No",
-      "description": "Cross-site scripting vulnerability in Apache2"
-    },
-    {
-      "name": "CVE-2023-0014",
-      "components": "php",
-      "version": "7.3.0",
-      "severity": "Medium",
-      "fixable": "Yes",
-      "fix_in_version": "7.3.1",
-      "RCE": "No",
-      "description": "Remote code execution vulnerability in PHP"
-    },
-    {
-      "name": "CVE-2023-0015",
-      "components": "mysql-server",
-      "version": "8.0.0",
-      "severity": "High",
-      "fixable": "Yes",
-      "fix_in_version": "8.0.1",
-      "RCE": "No",
-      "description": "SQL injection vulnerability in MySQL Server"
-    },
-    {
-      "name": "CVE-2023-0016",
-      "components": "postgresql",
-      "version": "13.0",
-      "severity": "Critical",
-      "fixable": "Yes",
-      "fix_in_version": "13.1",
-      "RCE": "No",
-      "description": "Privilege escalation vulnerability in PostgreSQL"
-    },
-    {
-      "name": "CVE-2023-0017",
-      "components": "mongodb",
-      "version": "4.2.0",
-      "severity": "Medium",
-      "fixable": "Yes",
-      "fix_in_version": "4.2.1",
-      "RCE": "No",
-      "description": "Insecure default configuration in MongoDB"
-    },
-    {
-      "name": "CVE-2023-0018",
-      "components": "redis-server",
-      "version": "6.0.0",
-      "severity": "Low",
-      "fixable": "Yes",
-      "fix_in_version": "6.0.1",
-      "RCE": "No",
-      "description": "Information disclosure vulnerability in Redis Server"
-    },
-    {
-      "name": "CVE-2023-0019",
-      "components": "nodejs",
-      "version": "14.0.0",
-      "severity": "Medium",
-      "fixable": "Yes",
-      "fix_in_version": "14.0.1",
-      "RCE": "No",
-      "description": "Cross-site scripting vulnerability in Node.js"
-    },
-    {
-      "name": "CVE-2023-0020",
-      "components": "apache-tomcat",
-      "version": "9.0.0",
-      "severity": "High",
-      "fixable": "Yes",
-      "fix_in_version": "9.0.1",
-      "RCE": "No",
-      "description": "Remote code execution vulnerability in Apache Tomcat"
-    },
-    {
-      "name": "CVE-2023-0021",
-      "components": "docker",
-      "version": "20.0.0",
-      "severity": "Critical",
-      "fixable": "Yes",
-      "fix_in_version": "20.0.1",
-      "RCE": "No",
-      "description": "Container escape vulnerability in Docker"
-    },
-    {
-      "name": "CVE-2023-0022",
-      "components": "kubernetes",
-      "version": "1.22.0",
-      "severity": "High",
-      "fixable": "Yes",
-      "fix_in_version": "1.22.1",
-      "RCE": "No",
-      "description": "Server-side request forgery vulnerability in Kubernetes"
-    },
-    {
-      "name": "CVE-2023-0023",
-      "components": "aws-cli",
-      "version": "2.0.0",
-      "severity": "Medium",
-      "fixable": "Yes",
-      "fix_in_version": "2.0.1",
-      "RCE": "No",
-      "description": "Information disclosure vulnerability in AWS CLI"
-    },
-    {
-      "name": "CVE-2023-0024",
-      "components": "nginx",
-      "version": "1.18.0",
-      "severity": "Low",
-      "fixable": "Yes",
-      "fix_in_version": "1.18.1",
-      "RCE": "No",
-      "description": "Cross-site scripting vulnerability in Nginx"
-    },
-    {
-      "name": "CVE-2023-0025",
-      "components": "apache2",
-      "version": "2.2.0",
-      "severity": "Medium",
-      "fixable": "Yes",
-      "fix_in_version": "2.2.1",
-      "RCE": "No",
-      "description": "Server-side request forgery vulnerability in Apache2"
-    },
-    {
-      "name": "CVE-2023-0026",
-      "components": "php",
-      "version": "7.4.0",
-      "severity": "High",
-      "fixable": "Yes",
-      "fix_in_version": "7.4.1",
-      "RCE": "No",
-      "description": "Remote code execution vulnerability in PHP"
-    },
-    {
-      "name": "CVE-2023-0027",
-      "components": "mysql-server",
-      "version": "5.7.0",
-      "severity": "Critical",
-      "fixable": "Yes",
-      "fix_in_version": "5.7.1",
-      "RCE": "No",
-      "description": "SQL injection vulnerability in MySQL Server"
-    },
-    {
-      "name": "CVE-2023-0028",
-      "components": "postgresql",
-      "version": "12.0",
-      "severity": "Medium",
-      "fixable": "Yes",
-      "fix_in_version": "12.1",
-      "RCE": "No",
-      "description": "Privilege escalation vulnerability in PostgreSQL"
-    },
-    {
-      "name": "CVE-2023-0029",
-      "components": "mongodb",
-      "version": "3.6.0",
-      "severity": "Low",
-      "fixable": "Yes",
-      "fix_in_version": "3.6.1",
-      "RCE": "No",
-      "description": "Insecure default configuration in MongoDB"
-    },
-    {
-      "name": "CVE-2023-0030",
-      "components": "redis-server",
-      "version": "5.0.0",
-      "severity": "Low",
-      "fixable": "Yes",
-      "fix_in_version": "5.0.1",
-      "RCE": "No",
-      "description": "Information disclosure vulnerability in Redis Server"
-    },
-    {
-      "name": "CVE-2023-0031",
-      "components": "nodejs",
-      "version": "12.0.0",
-      "severity": "High",
-      "fixable": "Yes",
-      "fix_in_version": "12.0.1",
-      "RCE": "No",
-      "description": "Remote code execution vulnerability in Node.js"
-    },
-    {
-      "name": "CVE-2023-0032",
-      "components": "apache-tomcat",
-      "version": "8.0.0",
-      "severity": "Medium",
-      "fixable": "Yes",
-      "fix_in_version": "8.0.1",
-      "RCE": "No",
-      "description": "Server-side request forgery vulnerability in Apache Tomcat"
-    },
-    {
-      "name": "CVE-2023-0033",
-      "components": "docker",
-      "version": "19.0.0",
-      "severity": "High",
-      "fixable": "Yes",
-      "fix_in_version": "19.0.1",
-      "RCE": "No",
-      "description": "Container escape vulnerability in Docker"
-    },
-    {
-      "name": "CVE-2023-0034",
-      "components": "kubernetes",
-      "version": "1.21.0",
-      "severity": "Low",
-      "fixable": "Yes",
-      "fix_in_version": "1.21.1",
-      "RCE": "No",
-      "description": "Cross-site scripting vulnerability in Kubernetes"
-    },
-    {
-      "name": "CVE-2023-0035",
-      "components": "aws-cli",
-      "version": "1.0.0",
-      "severity": "Medium",
-      "fixable": "Yes",
-      "fix_in_version": "1.0.1",
-      "RCE": "No",
-      "description": "Information disclosure vulnerability in AWS CLI"
-    },
-    {
-      "name": "CVE-2023-0036",
-      "components": "nginx",
-      "version": "1.20.0",
-      "severity": "Medium",
-      "fixable": "Yes",
-      "fix_in_version": "1.20.1",
-      "RCE": "No",
-      "description": "Server-side request forgery vulnerability in Nginx"
-    },
-    {
-      "name": "CVE-2023-0037",
-      "components": "apache2",
-      "version": "2.0.0",
-      "severity": "Critical",
-      "fixable": "Yes",
-      "fix_in_version": "2.0.1",
-      "RCE": "No",
-      "description": "Remote code execution vulnerability in Apache2"
-    },
-    {
-      "name": "CVE-2023-0038",
-      "components": "php",
-      "version": "7.2.0",
-      "severity": "Low",
-      "fixable": "Yes",
-      "fix_in_version": "7.2.1",
-      "RCE": "No",
-      "description": "Cross-site scripting vulnerability in PHP"
-    },
-    {
-      "name": "CVE-2023-0039",
-      "components": "mysql-server",
-      "version": "5.6.0",
-      "severity": "Medium",
-      "fixable": "Yes",
-      "fix_in_version": "5.6.1",
-      "RCE": "No",
-      "description": "SQL injection vulnerability in MySQL Server"
-    },
-    {
-      "name": "CVE-2023-0040",
-      "components": "postgresql",
-      "version": "11.0",
-      "severity": "High",
-      "fixable": "Yes",
-      "fix_in_version": "11.1",
-      "RCE": "No",
-      "description": "Privilege escalation vulnerability in PostgreSQL"
+        "cluster": "minikube",
+        "namespace": "argocd",
+        "workload": "argocd-deployment",
+        "container": "argocd-server",
+        "registry": "quay.io",
+        "imgtag": "quay.io/argoproj/argocd:v2.7.6",
+        "vulnerabilities": [
+          {
+            "name": "GHSA-4g4p-42wc-9f3m",
+            "components": "github.com/git-lfs/git-lfs",
+            "severity": "Critical",
+            "fixable": "Yes",
+            "fix_in_version": "2.12.1",
+            "RCE": "No",
+            "description": "Git LFS can execute a Git binary from the current directory."
+          },
+          {
+            "name": "GHSA-h4w9-6x78-8vrj",
+            "components": "github.com/argoproj/argo-cd/v2",
+            "severity": "Critical",
+            "fixable": "Yes",
+            "fix_in_version": "2.1.16",
+            "RCE": "No",
+            "description": "Argo CD's external URLs for Deployments can include JavaScript."
+          },
+          {
+            "name": "GHSA-r642-gv9p-2wjj",
+            "components": "github.com/argoproj/argo-cd/v2",
+            "severity": "Critical",
+            "fixable": "Yes",
+            "fix_in_version": "2.1.15",
+            "RCE": "No",
+            "description": "Argo CD will blindly trust JWT claims if anonymous access is enabled."
+          },
+          {
+            "name": "GHSA-vvpx-j8f3-3w6h",
+            "components": "golang.org/x/net",
+            "severity": "High",
+            "fixable": "Yes",
+            "fix_in_version": "0.7.0",
+            "RCE": "No",
+            "description": "Uncontrolled Resource Consumption."
+          },
+          {
+            "name": "GHSA-hqxw-f8mx-cpmw",
+            "components": "github.com/docker/distribution",
+            "severity": "High",
+            "fixable": "Yes",
+            "fix_in_version": "2.8.2-beta.1",
+            "RCE": "No",
+            "description": "Distribution catalog API endpoint can lead to OOM via malicious user input."
+          },
+          {
+            "name": "GHSA-63qx-x74g-jcr7",
+            "components": "github.com/argoproj/argo-cd/v2",
+            "severity": "High",
+            "fixable": "Yes",
+            "fix_in_version": "2.1.9",
+            "RCE": "No",
+            "description": "Path traversal and dereference of symlinks in Argo CD."
+          },
+          {
+            "name": "GHSA-232p-vwff-86mp",
+            "components": "github.com/docker/docker",
+            "severity": "High",
+            "fixable": "Yes",
+            "fix_in_version": "20.10.24",
+            "RCE": "No",
+            "description": "Docker Swarm encrypted overlay network may be unauthenticated."
+          },
+          {
+            "name": "GHSA-2m7h-86qq-fp4v",
+            "components": "github.com/argoproj/argo-cd/v2",
+            "severity": "High",
+            "fixable": "Yes",
+            "fix_in_version": "2.1.16",
+            "RCE": "No",
+            "description": "Insecure entropy in Argo CD's PKCE/Oauth2/OIDC params."
+          },
+          {
+            "name": "GHSA-w4xh-w33p-4v29",
+            "components": "github.com/git-lfs/git-lfs",
+            "severity": "High",
+            "fixable": "Yes",
+            "fix_in_version": "2.13.2",
+            "RCE": "No",
+            "description": "GitHub Git LFS Improper Input Validation vulnerability."
+          },
+          {
+            "name": "GHSA-96jv-vj39-x4j6",
+            "components": "github.com/argoproj/argo-cd/v2",
+            "severity": "High",
+            "fixable": "Yes",
+            "fix_in_version": "2.1.14",
+            "RCE": "No",
+            "description": "Argo CD improper access control bug can allow malicious user to escalate privileges to admin level."
+          },
+          {
+            "name": "GHSA-cx3w-xqmc-84g5",
+            "components": "github.com/git-lfs/git-lfs",
+            "severity": "High",
+            "fixable": "Yes",
+            "fix_in_version": "2.13.2",
+            "RCE": "No",
+            "description": "Git LFS can execute a Git binary from the current directory on Windows."
+          },
+          {
+            "name": "GHSA-53c4-hhmh-vw5q",
+            "components": "helm.sh/helm/v3",
+            "severity": "Medium",
+            "fixable": "Yes",
+            "fix_in_version": "3.10.3",
+            "RCE": "No",
+            "description": "Helm vulnerable to denial of service through repository index file."
+          },
+          {
+            "name": "GHSA-6gcg-hp2x-q54h",
+            "components": "github.com/argoproj/argo-cd/v2",
+            "severity": "Medium",
+            "fixable": "Yes",
+            "fix_in_version": "2.1.15",
+            "RCE": "No",
+            "description": "Symlink following allows leaking out-of-bound manifests and JSON files from Argo CD repo-server."
+          },
+          {
+            "name": "GHSA-7hfp-qfw3-5jxh",
+            "components": "helm.sh/helm/v3",
+            "severity": "Medium",
+            "fixable": "Yes",
+            "fix_in_version": "3.9.4",
+            "RCE": "No",
+            "description": "Denial of service through string value parsing."
+          },
+          {
+            "name": "GHSA-cgcv-5272-97pr",
+            "components": "k8s.io/kubernetes",
+            "severity": "Medium",
+            "fixable": "Yes",
+            "fix_in_version": "1.24.15",
+            "RCE": "No",
+            "description": "Kubernetes mountable secrets policy bypass."
+          },
+          {
+            "name": "GHSA-67fx-wx78-jx33",
+            "components": "helm.sh/helm/v3",
+            "severity": "Medium",
+            "fixable": "Yes",
+            "fix_in_version": "3.10.3",
+            "RCE": "No",
+            "description": "Helm vulnerable to denial of service through schema file."
+          },
+          {
+            "name": "GHSA-qq5v-f4c3-395c",
+            "components": "github.com/argoproj/argo-cd/v2",
+            "severity": "Medium",
+            "fixable": "Yes",
+            "fix_in_version": "1.7.13",
+            "RCE": "No",
+            "description": "Possible XSS when using SSO with the CLI in github.com/argoproj/argo-cd/v2."
+          },
+          {
+            "name": "CVE-2023-31437",
+            "components": "libsystemd0",
+            "severity": "Medium",
+            "fixable": "No",
+            "fix_in_version": "",
+            "RCE": "No",
+            "description": "** DISPUTED ** An issue was discovered in systemd 253. An attacker can modify a sealed log file such that, in some views, not all existing and sealed log messages are displayed. NOTE: the vendor reportedly sent \"a reply denying that any of the finding was a security vulnerability.\""
+          },
+          {
+            "name": "CVE-2023-31439",
+            "components": "libsystemd0",
+            "severity": "Medium",
+            "fixable": "No",
+            "fix_in_version": "",
+            "RCE": "No",
+            "description": "** DISPUTED ** An issue was discovered in systemd 253. An attacker can modify the contents of past events in a sealed log file and then adjust the file such that checking the integrity shows no error, despite modifications. NOTE: the vendor reportedly sent \"a reply denying that any of the finding was a security vulnerability.\""
+          },
+          {
+            "name": "GHSA-2q5c-qw9c-fmvq",
+            "components": "github.com/argoproj/argo-cd/v2",
+            "severity": "Medium",
+            "fixable": "Yes",
+            "fix_in_version": "2.4.28",
+            "RCE": "No",
+            "description": "Argo CD authenticated but unauthorized users may enumerate Application names via the API."
+          },
+          {
+            "name": "GHSA-56hp-xqp3-w2jf",
+            "components": "helm.sh/helm/v3",
+            "severity": "Medium",
+            "fixable": "Yes",
+            "fix_in_version": "3.6.1",
+            "RCE": "No",
+            "description": "Repository credentials passed to alternate domain."
+          },
+          {
+            "name": "GHSA-6wrf-mxfj-pf5p",
+            "components": "github.com/docker/docker",
+            "severity": "Medium",
+            "fixable": "Yes",
+            "fix_in_version": "20.10.24",
+            "RCE": "No",
+            "description": "Docker Swarm encrypted overlay network with a single endpoint is unauthenticated."
+          },
+          {
+            "name": "GHSA-xc8m-28vv-4pjc",
+            "components": "k8s.io/kubernetes",
+            "severity": "Medium",
+            "fixable": "Yes",
+            "fix_in_version": "1.24.14",
+            "RCE": "No",
+            "description": "Kubelet vulnerable to bypass of seccomp profile enforcement."
+          },
+          {
+            "name": "CVE-2023-31438",
+            "components": "libudev1",
+            "severity": "Medium",
+            "fixable": "No",
+            "fix_in_version": "",
+            "RCE": "No",
+            "description": "** DISPUTED ** An issue was discovered in systemd 253. An attacker can truncate a sealed log file and then resume log sealing such that checking the integrity shows no error, despite modifications. NOTE: the vendor reportedly sent \"a reply denying that any of the finding was a security vulnerability.\""
+          },
+          {
+            "name": "GHSA-33pg-m6jh-5237",
+            "components": "github.com/docker/docker",
+            "severity": "Medium",
+            "fixable": "Yes",
+            "fix_in_version": "20.10.24",
+            "RCE": "No",
+            "description": "Docker Swarm encrypted overlay network traffic may be unencrypted."
+          },
+          {
+            "name": "GHSA-qc2g-gmh6-95p4",
+            "components": "k8s.io/kubernetes",
+            "severity": "Medium",
+            "fixable": "Yes",
+            "fix_in_version": "1.24.15",
+            "RCE": "No",
+            "description": "kube-apiserver vulnerable to policy bypass."
+          },
+          {
+            "name": "GHSA-6rx9-889q-vv2r",
+            "components": "helm.sh/helm/v3",
+            "severity": "Medium",
+            "fixable": "Yes",
+            "fix_in_version": "3.10.3",
+            "RCE": "No",
+            "description": "Helm vulnerable to denial of service through string value parsing."
+          },
+          {
+            "name": "GHSA-jhqp-vf4w-rpwq",
+            "components": "github.com/argoproj/argo-cd/v2",
+            "severity": "Medium",
+            "fixable": "Yes",
+            "fix_in_version": "2.1.16",
+            "RCE": "No",
+            "description": "DoS through large manifest files in Argo CD."
+          },
+          {
+            "name": "GHSA-q4w5-4gq2-98vm",
+            "components": "github.com/argoproj/argo-cd/v2",
+            "severity": "Medium",
+            "fixable": "Yes",
+            "fix_in_version": "2.1.16",
+            "RCE": "No",
+            "description": "Symlink following allows leaking out-of-bounds YAML files from Argo CD repo-server."
+          },
+          {
+            "name": "CVE-2022-3219",
+            "components": "gpg-wks-client",
+            "severity": "Low",
+            "fixable": "No",
+            "fix_in_version": "",
+            "RCE": "No",
+            "description": "GnuPG can be made to spin on a relatively small input by (for example) crafting a public key with thousands of signatures attached, compressed down to just a few KB."
+          },
+          {
+            "name": "CVE-2022-3219",
+            "components": "gpgsm",
+            "severity": "Low",
+            "fixable": "No",
+            "fix_in_version": "",
+            "RCE": "No",
+            "description": "GnuPG can be made to spin on a relatively small input by (for example) crafting a public key with thousands of signatures attached, compressed down to just a few KB."
+          },
+          {
+            "name": "CVE-2022-3715",
+            "components": "bash",
+            "severity": "Low",
+            "fixable": "No",
+            "fix_in_version": "",
+            "RCE": "No",
+            "description": "A flaw was found in the bash package, where a heap-buffer overflow can occur in valid parameter_transform. This issue may lead to memory problems."
+          },
+          {
+            "name": "CVE-2022-4899",
+            "components": "libzstd1",
+            "severity": "Low",
+            "fixable": "No",
+            "fix_in_version": "",
+            "RCE": "No",
+            "description": "A vulnerability was found in zstd v1.4.10, where an attacker can supply empty string as an argument to the command line tool to cause buffer overrun."
+          },
+          {
+            "name": "CVE-2023-28321",
+            "components": "libcurl3-gnutls",
+            "severity": "Low",
+            "fixable": "No",
+            "fix_in_version": "",
+            "RCE": "No",
+            "description": "An improper certificate validation vulnerability exists in curl <v8.1.0 in the way it supports matching of wildcard patterns when listed as \"Subject Alternative Name\" in TLS server certificates. curl can be built to use its own name matching function for TLS rather than one provided by a TLS library. This private wildcard matching function would match IDN (International Domain Name) hosts incorrectly and could as a result accept patterns that otherwise should mismatch. IDN hostnames are converted to puny code before used for certificate checks. Puny coded names always start with `xn--` and should not be allowed to pattern match, but the wildcard check in curl could still check for `x*`, which would match even though the IDN name most likely contained nothing even resembling an `x`."
+          },
+          {
+            "name": "CVE-2023-2953",
+            "components": "libldap-2.5-0",
+            "severity": "Low",
+            "fixable": "No",
+            "fix_in_version": "",
+            "RCE": "No",
+            "description": "A vulnerability was found in openldap. This security flaw causes a null pointer dereference in ber_memalloc_x() function."
+          },
+          {
+            "name": "CVE-2023-2953",
+            "components": "libldap-common",
+            "severity": "Low",
+            "fixable": "No",
+            "fix_in_version": "",
+            "RCE": "No",
+            "description": "A vulnerability was found in openldap. This security flaw causes a null pointer dereference in ber_memalloc_x() function."
+          },
+          {
+            "name": "CVE-2018-1000021",
+            "components": "git-man",
+            "severity": "Low",
+            "fixable": "No",
+            "fix_in_version": "",
+            "RCE": "No",
+            "description": "GIT version 2.15.1 and earlier contains a Input Validation Error vulnerability in Client that can result in problems including messing up terminal configuration to RCE. This attack appear to be exploitable via The user must interact with a malicious git server, (or have their traffic modified in a MITM attack)."
+          },
+          {
+            "name": "CVE-2022-3219",
+            "components": "gnupg",
+            "severity": "Low",
+            "fixable": "No",
+            "fix_in_version": "",
+            "RCE": "No",
+            "description": "GnuPG can be made to spin on a relatively small input by (for example) crafting a public key with thousands of signatures attached, compressed down to just a few KB."
+          },
+          {
+            "name": "CVE-2023-28322",
+            "components": "libcurl3-gnutls",
+            "severity": "Low",
+            "fixable": "No",
+            "fix_in_version": "",
+            "RCE": "No",
+            "description": "An information disclosure vulnerability exists in curl <v8.1.0 when doing HTTP(S) transfers, libcurl might erroneously use the read callback (`CURLOPT_READFUNCTION`) to ask for data to send, even when the `CURLOPT_POSTFIELDS` option has been set, if the same handle previously wasused to issue a `PUT` request which used that callback. This flaw may surprise the application and cause it to misbehave and either send off the wrong data or use memory after free or similar in the second transfer. The problem exists in the logic for a reused handle when it is (expected to be) changed from a PUT to a POST."
+          },
+          {
+            "name": "CVE-2023-29383",
+            "components": "login",
+            "severity": "Low",
+            "fixable": "No",
+            "fix_in_version": "",
+            "RCE": "No",
+            "description": "In Shadow 4.13, it is possible to inject control characters into fields provided to the SUID program chfn (change finger). Although it is not possible to exploit this directly (e.g., adding a new user fails because \\n is in the block list), it is possible to misrepresent the /etc/passwd file when viewed. Use of \\r manipulations and Unicode characters to work around blocking of the : character make it possible to give the impression that a new user has been added. In other words, an adversary may be able to convince a system administrator to take the system offline (an indirect, social-engineered denial of service) by demonstrating that \"cat /etc/passwd\" shows a rogue user account."
+          },
+          {
+            "name": "CVE-2022-3219",
+            "components": "gnupg-utils",
+            "severity": "Low",
+            "fixable": "No",
+            "fix_in_version": "",
+            "RCE": "No",
+            "description": "GnuPG can be made to spin on a relatively small input by (for example) crafting a public key with thousands of signatures attached, compressed down to just a few KB."
+          },
+          {
+            "name": "CVE-2022-3219",
+            "components": "gpgconf",
+            "severity": "Low",
+            "fixable": "No",
+            "fix_in_version": "",
+            "RCE": "No",
+            "description": "GnuPG can be made to spin on a relatively small input by (for example) crafting a public key with thousands of signatures attached, compressed down to just a few KB."
+          },
+          {
+            "name": "CVE-2022-3219",
+            "components": "gpgv",
+            "severity": "Low",
+            "fixable": "No",
+            "fix_in_version": "",
+            "RCE": "No",
+            "description": "GnuPG can be made to spin on a relatively small input by (for example) crafting a public key with thousands of signatures attached, compressed down to just a few KB."
+          },
+          {
+            "name": "CVE-2023-2948",
+            "components": "util-linux",
+            "severity": "Low",
+            "fixable": "No",
+            "fix_in_version": "",
+            "RCE": "No",
+            "description": "`umount` in `util-linux` before 2.31.1 allows local users to cause a denial of service (umount failed) by triggering an MNT_DETACH umount on an NFS mount with a grain size larger than the page size."
+          },
+          {
+            "name": "CVE-2022-3219",
+            "components": "gpg",
+            "severity": "Low",
+            "fixable": "No",
+            "fix_in_version": "",
+            "RCE": "No",
+            "description": "GnuPG can be made to spin on a relatively small input by (for example) crafting a public key with thousands of signatures attached, compressed down to just a few KB."
+          }
+        ]
     }
-  ]
-}
+]
+  
