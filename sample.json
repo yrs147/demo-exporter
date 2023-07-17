@@ -1,0 +1,49 @@
+[
+    {
+        "cluster": "minikube",
+        "namespace": "default",
+        "workload": "pod-backend",
+        "container": "backend",
+        "registry": "docker-hub",
+        "imgtag": "yrs/tesapp:latest",
+        "vulnerabilities": [
+          {
+            "name": "GHSA-1234-abcd-5678",
+            "components": "nodejs",
+            "severity": "Medium",
+            "fixable": "Yes",
+            "fix_in_version": "14.0.1",
+            "RCE": "No",
+            "description": "A medium severity vulnerability in Node.js allows remote code execution."
+          },
+          {
+            "name": "CVE-2023-5678",
+            "components": "nginx",
+            "severity": "Critical",
+            "fixable": "Yes",
+            "fix_in_version": "1.18.1",
+            "RCE": "No",
+            "description": "A critical vulnerability in Nginx allows remote attackers to execute arbitrary code."
+          },
+          {
+            "name": "GHSA-efgh-9012-ijkl",
+            "components": "apache2",
+            "severity": "Low",
+            "fixable": "No",
+            "fix_in_version": "-",
+            "RCE": "No",
+            "description": "A low severity vulnerability in Apache2 exposes sensitive data to unauthorized users."
+          },
+          {
+            "name": "GHSA-abcd-5678-ijkl",
+            "components": "aws-cli",
+            "severity": "Critical",
+            "fixable": "Yes",
+            "fix_in_version": "2.0.1",
+            "RCE": "No",
+            "description": "A critical severity vulnerability in AWS CLI allows information disclosure."
+          }
+        ]
+    }    
+
+]    
