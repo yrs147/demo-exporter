@@ -5,7 +5,7 @@
         "workload": "pod-backend",
         "container": "backend",
         "registry": "docker-hub",
-        "imgtag": "yrs/tesapp:latest",
+        "tag": "yrs/testapp:latest",
         "vulnerabilities": [
           {
             "name": "GHSA-1234-abcd-5678",

@@ -31,6 +31,8 @@ type Item struct {
 	Vulnerabilities []Vulnerability `json:"vulnerabilities"`
 }
 
+
+
 type Metrics struct {
 	total_vulnerabilities      prometheus.GaugeVec
 	rce_vulnerabilities        prometheus.GaugeVec
@@ -47,39 +49,39 @@ var (
 	total_vulnerabilities = prometheus.NewGaugeVec(prometheus.GaugeOpts{
 		Name: "total_vulnerabilities",
 		Help: "Total number of vulnerabilities in cluster",
-	}, []string{"name", "cluster", "namespace", "workload", "registry", "tag"})
+	}, []string{"cluster", "namespace", "workload", "registry", "tag"})
 	rce_vulnerabilities = prometheus.NewGaugeVec(prometheus.GaugeOpts{
 		Name: "rce_vulnerabilities",
 		Help: "Number of vulnerabilities related to remote code execution (RCE) in image",
-	}, []string{"name", "cluster", "namespace", "workload", "registry", "tag"})
+	}, []string{"cluster", "namespace", "workload", "registry", "tag"})
 	fixable_vulnerabilities = prometheus.NewGaugeVec(prometheus.GaugeOpts{
 		Name: "fixable_vulnerabilities",
 		Help: "Number of fixable vulnerabilities in image",
-	}, []string{"name", "cluster", "namespace", "workload", "registry", "tag"})
+	}, []string{"cluster", "namespace", "workload", "registry", "tag"})
 	critical_vulnerabilities = prometheus.NewGaugeVec(prometheus.GaugeOpts{
 		Name: "critical_vulnerabilities",
 		Help: "Number of critical vulnerabilities in image",
-	}, []string{"name", "cluster", "namespace", "workload", "registry", "tag"})
+	}, []string{"cluster", "namespace", "workload", "registry", "tag"})
 	high_vulnerabilities = prometheus.NewGaugeVec(prometheus.GaugeOpts{
 		Name: "high_vulnerabilities",
 		Help: "Number of high vulnerabilities in image",
-	}, []string{"name", "cluster", "namespace", "workload", "registry", "tag"})
+	}, []string{"cluster", "namespace", "workload", "registry", "tag"})
 	medium_vulnerabilities = prometheus.NewGaugeVec(prometheus.GaugeOpts{
 		Name: "medium_vulnerabilities",
 		Help: "Number of medium vulnerabilities in image",
-	}, []string{"name", "cluster", "namespace", "workload", "registry", "tag"})
+	}, []string{"cluster", "namespace", "workload", "registry", "tag"})
 	low_vulnerabilities = prometheus.NewGaugeVec(prometheus.GaugeOpts{
 		Name: "low_vulnerabilities",
 		Help: "Number of low vulnerabilities in image",
-	}, []string{"name", "cluster", "namespace", "workload", "registry", "tag"})
+	}, []string{"cluster", "namespace", "workload", "registry", "tag"})
 	negligible_vulnerabilities = prometheus.NewGaugeVec(prometheus.GaugeOpts{
 		Name: "negligible_vulnerabilities",
 		Help: "Number of negligible vulnerabilities in image",
-	}, []string{"name", "cluster", "namespace", "workload", "registry", "tag"})
+	}, []string{"cluster", "namespace", "workload", "registry", "tag"})
 	unknown_vulnerabilities = prometheus.NewGaugeVec(prometheus.GaugeOpts{
 		Name: "unknown_vulnerabilities",
 		Help: "Number of unknown vulnerabilities in image",
-	}, []string{"name", "cluster", "namespace", "workload", "registry", "tag"})
+	}, []string{"cluster", "namespace", "workload", "registry", "tag"})
 )
 
 func init() {
@@ -167,17 +169,16 @@ func ProcessMetrics() (total int, neg int, high int, med int, low int, crit int,
 			if vuln.RCE == "Yes" {
 				rceVulnerabilities++
 			}
-
 			// Update Prometheus metrics with labels
-			total_vulnerabilities.WithLabelValues(vuln.Name, item.Cluster, item.Namespace, item.Workload, item.Registry, item.Tag).Set(float64(totalVulnerabilities))
-			rce_vulnerabilities.WithLabelValues(vuln.Name, item.Cluster, item.Namespace, item.Workload, item.Registry, item.Tag).Set(float64(rceVulnerabilities))
-			fixable_vulnerabilities.WithLabelValues(vuln.Name, item.Cluster, item.Namespace, item.Workload, item.Registry, item.Tag).Set(float64(fixableVulnerabilities))
-			critical_vulnerabilities.WithLabelValues(vuln.Name, item.Cluster, item.Namespace, item.Workload, item.Registry, item.Tag).Set(float64(criticalVulnerabilities))
-			high_vulnerabilities.WithLabelValues(vuln.Name, item.Cluster, item.Namespace, item.Workload, item.Registry, item.Tag).Set(float64(highVulnerabilities))
-			medium_vulnerabilities.WithLabelValues(vuln.Name, item.Cluster, item.Namespace, item.Workload, item.Registry, item.Tag).Set(float64(mediumVulnerabilities))
-			low_vulnerabilities.WithLabelValues(vuln.Name, item.Cluster, item.Namespace, item.Workload, item.Registry, item.Tag).Set(float64(lowVulnerabilities))
-			negligible_vulnerabilities.WithLabelValues(vuln.Name, item.Cluster, item.Namespace, item.Workload, item.Registry, item.Tag).Set(float64(negligibleVulnerabilities))
-			unknown_vulnerabilities.WithLabelValues(vuln.Name, item.Cluster, item.Namespace, item.Workload, item.Registry, item.Tag).Set(float64(unknownVulnerabilities))
+			total_vulnerabilities.WithLabelValues(item.Cluster, item.Namespace, item.Workload, item.Registry, item.Tag).Set(float64(totalVulnerabilities))
+			rce_vulnerabilities.WithLabelValues(item.Cluster, item.Namespace, item.Workload, item.Registry, item.Tag).Set(float64(rceVulnerabilities))
+			fixable_vulnerabilities.WithLabelValues(item.Cluster, item.Namespace, item.Workload, item.Registry, item.Tag).Set(float64(fixableVulnerabilities))
+			critical_vulnerabilities.WithLabelValues(item.Cluster, item.Namespace, item.Workload, item.Registry, item.Tag).Set(float64(criticalVulnerabilities))
+			high_vulnerabilities.WithLabelValues(item.Cluster, item.Namespace, item.Workload, item.Registry, item.Tag).Set(float64(highVulnerabilities))
+			medium_vulnerabilities.WithLabelValues(item.Cluster, item.Namespace, item.Workload, item.Registry, item.Tag).Set(float64(mediumVulnerabilities))
+			low_vulnerabilities.WithLabelValues(item.Cluster, item.Namespace, item.Workload, item.Registry, item.Tag).Set(float64(lowVulnerabilities))
+			negligible_vulnerabilities.WithLabelValues(item.Cluster, item.Namespace, item.Workload, item.Registry, item.Tag).Set(float64(negligibleVulnerabilities))
+			unknown_vulnerabilities.WithLabelValues(item.Cluster, item.Namespace, item.Workload, item.Registry, item.Tag).Set(float64(unknownVulnerabilities))
 		}
 	}
 
