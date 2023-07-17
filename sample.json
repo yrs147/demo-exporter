@@ -42,6 +42,357 @@
             "fix_in_version": "2.0.1",
             "RCE": "No",
             "description": "A critical severity vulnerability in AWS CLI allows information disclosure."
+          },
+          {
+            "name": "CVE-2023-pqrs-7890",
+            "components": "docker",
+            "severity": "Negligible",
+            "fixable": "No",
+            "fix_in_version": "-",
+            "RCE": "No",
+            "description": "A negligible severity vulnerability in Docker has minimal impact."
+          },
+          {
+            "name": "CVE-2023-9012",
+            "components": "apache-tomcat",
+            "severity": "High",
+            "fixable": "Yes",
+            "fix_in_version": "9.0.1",
+            "RCE": "No",
+            "description": "A high severity vulnerability in Apache Tomcat allows remote code execution."
+          },
+          {
+            "name": "CVE-2023-7890",
+            "components": "mysql-server",
+            "severity": "Low",
+            "fixable": "Yes",
+            "fix_in_version": "5.6.1",
+            "RCE": "No",
+            "description": "A low severity vulnerability in MySQL Server allows SQL injection attacks."
+          },
+          {
+            "name": "CVE-2023-mnop-3456",
+            "components": "php",
+            "severity": "High",
+            "fixable": "Yes",
+            "fix_in_version": "7.3.1",
+            "RCE": "No",
+            "description": "A high severity vulnerability in PHP allows remote attackers to execute arbitrary code."
+          },
+          {
+            "name": "CVE-2023-9012-ijkl",
+            "components": "mongodb",
+            "severity": "Medium",
+            "fixable": "Yes",
+            "fix_in_version": "4.2.1",
+            "RCE": "No",
+            "description": "A medium severity vulnerability in MongoDB exposes sensitive data to unauthorized users."
+          },
+          {
+            "name": "GHSA-mnop-5678-abcd",
+            "components": "php",
+            "severity": "Medium",
+            "fixable": "Yes",
+            "fix_in_version": "7.3.1",
+            "RCE": "No",
+            "description": "A medium severity vulnerability in PHP allows remote attackers to execute arbitrary code."
+          },
+          {
+            "name": "GHSA-ijkl-9012-mnop",
+            "components": "kubernetes",
+            "severity": "High",
+            "fixable": "Yes",
+            "fix_in_version": "1.22.1",
+            "RCE": "No",
+            "description": "A high severity vulnerability in Kubernetes allows unauthorized access to cluster resources."
+          },
+          {
+            "name": "GHSA-pqrs-7890-abcd",
+            "components": "postgresql",
+            "severity": "Negligible",
+            "fixable": "Yes",
+            "fix_in_version": "12.1",
+            "RCE": "No",
+            "description": "A low severity vulnerability in PostgreSQL allows unauthorized access to database resources."
+          },
+          {
+            "name": "GHSA-5678-abcd-1234",
+            "components": "kubernetes",
+            "severity": "Critical",
+            "fixable": "Yes",
+            "fix_in_version": "1.22.1",
+            "RCE": "No",
+            "description": "A critical severity vulnerability in Kubernetes allows unauthorized access to cluster resources."
+          },
+          {
+            "name": "CVE-2023-5678-mnop",
+            "components": "nginx",
+            "severity": "Medium",
+            "fixable": "Yes",
+            "fix_in_version": "1.18.1",
+            "RCE": "No",
+            "description": "A medium severity vulnerability in Nginx exposes sensitive data to unauthorized users."
+          },
+          {
+            "name": "GHSA-7890-abcd-ijkl",
+            "components": "nodejs",
+            "severity": "Low",
+            "fixable": "No",
+            "fix_in_version": "-",
+            "RCE": "No",
+            "description": "A low severity vulnerability in Node.js exposes sensitive data to unauthorized users."
+          },
+          {
+            "name": "GHSA-mnop-5678-pqrs",
+            "components": "postgresql",
+            "severity": "Critical",
+            "fixable": "Yes",
+            "fix_in_version": "12.1",
+            "RCE": "No",
+            "description": "A critical severity vulnerability in PostgreSQL allows unauthorized access to database resources."
+          },
+          {
+            "name": "CVE-2023-9012-mnop",
+            "components": "apache-tomcat",
+            "severity": "Low",
+            "fixable": "Yes",
+            "fix_in_version": "9.0.1",
+            "RCE": "No",
+            "description": "A low severity vulnerability in Apache Tomcat exposes sensitive data to unauthorized users."
+          },
+          {
+            "name": "CVE-2023-9012",
+            "components": "mongodb",
+            "severity": "High",
+            "fixable": "Yes",
+            "fix_in_version": "4.2.1",
+            "RCE": "No",
+            "description": "A high severity vulnerability in MongoDB allows remote code execution."
+          },
+          {
+            "name": "GHSA-ijkl-9012-qrst",
+            "components": "apache2",
+            "severity": "Negligible",
+            "fixable": "No",
+            "fix_in_version": "-",
+            "RCE": "No",
+            "description": "A negligible severity vulnerability in Apache2 has minimal impact."
+          },
+          {
+            "name": "CVE-2023-7890",
+            "components": "mysql-server",
+            "severity": "Medium",
+            "fixable": "Yes",
+            "fix_in_version": "5.6.1",
+            "RCE": "No",
+            "description": "A medium severity vulnerability in MySQL Server allows unauthorized access to database resources."
+          },
+          {
+            "name": "GHSA-abcd-5678-ijkl",
+            "components": "aws-cli",
+            "severity": "High",
+            "fixable": "Yes",
+            "fix_in_version": "2.0.1",
+            "RCE": "No",
+            "description": "A high severity vulnerability in AWS CLI allows remote code execution."
+          },
+          {
+            "name": "CVE-2023-mnop-3456",
+            "components": "php",
+            "severity": "Medium",
+            "fixable": "Yes",
+            "fix_in_version": "7.3.1",
+            "RCE": "No",
+            "description": "A medium severity vulnerability in PHP allows remote attackers to execute arbitrary code."
+          },
+          {
+            "name": "GHSA-1234-abcd-5678",
+            "components": "nodejs",
+            "severity": "Negligible",
+            "fixable": "No",
+            "fix_in_version": "-",
+            "RCE": "No",
+            "description": "A low severity vulnerability in Node.js exposes sensitive data to unauthorized users."
+          },
+          {
+            "name": "CVE-2023-pqrs-7890",
+            "components": "docker",
+            "severity": "Medium",
+            "fixable": "Yes",
+            "fix_in_version": "19.0.1",
+            "RCE": "No",
+            "description": "A medium severity vulnerability in Docker allows unauthorized access to container data."
+          },
+          {
+            "name": "CVE-2023-5678",
+            "components": "nginx",
+            "severity": "High",
+            "fixable": "Yes",
+            "fix_in_version": "1.18.1",
+            "RCE": "No",
+            "description": "A high severity vulnerability in Nginx allows remote code execution."
+          },
+          {
+            "name": "GHSA-ijkl-9012-mnop",
+            "components": "kubernetes",
+            "severity": "Medium",
+            "fixable": "Yes",
+            "fix_in_version": "1.22.1",
+            "RCE": "No",
+            "description": "A medium severity vulnerability in Kubernetes allows unauthorized access to cluster resources."
+          },
+          {
+            "name": "GHSA-7890-abcd-ijkl",
+            "components": "nodejs",
+            "severity": "High",
+            "fixable": "Yes",
+            "fix_in_version": "14.0.1",
+            "RCE": "No",
+            "description": "A high severity vulnerability in Node.js allows remote code execution."
+          },
+          {
+            "name": "CVE-2023-9012-ijkl",
+            "components": "mongodb",
+            "severity": "Medium",
+            "fixable": "Yes",
+            "fix_in_version": "4.2.1",
+            "RCE": "No",
+            "description": "A medium severity vulnerability in MongoDB exposes sensitive data to unauthorized users."
+          },
+          {
+            "name": "GHSA-abcd-5678-ijkl",
+            "components": "aws-cli",
+            "severity": "Low",
+            "fixable": "No",
+            "fix_in_version": "-",
+            "RCE": "No",
+            "description": "A low severity vulnerability in AWS CLI exposes sensitive data to unauthorized users."
+          },
+          {
+            "name": "CVE-2023-9012",
+            "components": "apache-tomcat",
+            "severity": "High",
+            "fixable": "Yes",
+            "fix_in_version": "9.0.1",
+            "RCE": "No",
+            "description": "A high severity vulnerability in Apache Tomcat allows remote code execution."
+          },
+          {
+            "name": "CVE-2023-mnop-3456",
+            "components": "php",
+            "severity": "Low",
+            "fixable": "Yes",
+            "fix_in_version": "7.3.1",
+            "RCE": "No",
+            "description": "A low severity vulnerability in PHP exposes sensitive data to unauthorized users."
+          },
+          {
+            "name": "GHSA-pqrs-7890-abcd",
+            "components": "postgresql",
+            "severity": "Medium",
+            "fixable": "Yes",
+            "fix_in_version": "12.1",
+            "RCE": "No",
+            "description": "A medium severity vulnerability in PostgreSQL allows unauthorized access to database resources."
+          },
+          {
+            "name": "GHSA-ijkl-9012-mnop",
+            "components": "kubernetes",
+            "severity": "High",
+            "fixable": "Yes",
+            "fix_in_version": "1.22.1",
+            "RCE": "No",
+            "description": "A high severity vulnerability in Kubernetes allows unauthorized access to cluster resources."
+          },
+          {
+            "name": "CVE-2023-5678",
+            "components": "nginx",
+            "severity": "Critical",
+            "fixable": "Yes",
+            "fix_in_version": "1.18.1",
+            "RCE": "No",
+            "description": "A critical vulnerability in Nginx allows remote attackers to execute arbitrary code."
+          },
+          {
+            "name": "GHSA-mnop-5678-abcd",
+            "components": "php",
+            "severity": "Medium",
+            "fixable": "Yes",
+            "fix_in_version": "7.3.1",
+            "RCE": "No",
+            "description": "A medium severity vulnerability in PHP allows remote attackers to execute arbitrary code."
+          },
+          {
+            "name": "GHSA-9012-abcd-ijkl",
+            "components": "nodejs",
+            "severity": "Negligible",
+            "fixable": "No",
+            "fix_in_version": "-",
+            "RCE": "No",
+            "description": "A negligible severity vulnerability in Node.js has minimal impact."
+          },
+          {
+            "name": "CVE-2023-pqrs-7890",
+            "components": "docker",
+            "severity": "Medium",
+            "fixable": "Yes",
+            "fix_in_version": "19.0.1",
+            "RCE": "No",
+            "description": "A medium severity vulnerability in Docker allows unauthorized access to container data."
+          },
+          {
+            "name": "GHSA-abcd-ijkl-1234",
+            "components": "aws-cli",
+            "severity": "High",
+            "fixable": "Yes",
+            "fix_in_version": "2.0.1",
+            "RCE": "No",
+            "description": "A high severity vulnerability in AWS CLI allows remote code execution."
+          },
+          {
+            "name": "CVE-2023-7890-mnop",
+            "components": "mongodb",
+            "severity": "Medium",
+            "fixable": "Yes",
+            "fix_in_version": "4.2.1",
+            "RCE": "No",
+            "description": "A medium severity vulnerability in MongoDB exposes sensitive data to unauthorized users."
+          },
+          {
+            "name": "GHSA-ijkl-mnop-9012",
+            "components": "kubernetes",
+            "severity": "Critical",
+            "fixable": "Yes",
+            "fix_in_version": "1.22.1",
+            "RCE": "No",
+            "description": "A critical severity vulnerability in Kubernetes allows unauthorized access to cluster resources."
+          },
+          {
+            "name": "GHSA-7890-abcd-ijkl",
+            "components": "nodejs",
+            "severity": "Medium",
+            "fixable": "Yes",
+            "fix_in_version": "14.0.1",
+            "RCE": "No",
+            "description": "A medium severity vulnerability in Node.js allows remote code execution."
+          },
+          {
+            "name": "CVE-2023-3456",
+            "components": "nginx",
+            "severity": "Low",
+            "fixable": "Yes",
+            "fix_in_version": "1.18.1",
+            "RCE": "No",
+            "description": "A low severity vulnerability in Nginx exposes sensitive data to unauthorized users."
+          },
+          {
+            "name": "CVE-2023-pqrs-7890",
+            "components": "docker",
+            "severity": "High",
+            "fixable": "Yes",
+            "fix_in_version": "19.0.1",
+            "RCE": "No",
+            "description": "A high severity vulnerability in Docker allows container escape."
           }
         ]
     }    
